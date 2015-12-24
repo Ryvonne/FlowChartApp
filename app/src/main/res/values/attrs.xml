@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FlowItem">
+        <attr name="text_location">
+            <enum name="Center" value="0"></enum>
+            <enum name="Left" value="1"></enum>
+            <enum name="Top" value="2"></enum>
+            <enum name="Right" value="3"></enum>
+            <enum name="Bottom" value="4"></enum>
+        </attr>
+        <attr name="textcolor" format="color" />
+        <attr name="textcontent" format="string" />
+        <attr name="textsize" format="dimension" />
+        <attr name="textpadding" format="dimension" />
+        <attr name="imagebackgroud" format="reference"/>
+        <attr name="needline">
+            <enum name="both" value="0"></enum>
+            <enum name="start" value="1"></enum>
+            <enum name="end" value="2"></enum>
+            <enum name="none" value="3"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

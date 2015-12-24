@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ryv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.flow.ryvonne.flowchartapp.fragment.SingleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.flow.ryvonne.flowchartapp.view.FlowItem
+                android:id="@+id/fl_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                ryv:imagebackgroud="@drawable/shape_green_circle"
+                ryv:text_location="Right"
+                ryv:textcontent="流程一" />
+
+            <cn.flow.ryvonne.flowchartapp.view.FlowItem
+                android:id="@+id/fl_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                ryv:imagebackgroud="@drawable/shape_green_circle"
+                ryv:text_location="Left"
+                ryv:textcontent="流程二" />
+
+            <cn.flow.ryvonne.flowchartapp.view.FlowGroupView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout
+                    android:id="@+id/fl_fum_group"
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <cn.flow.ryvonne.flowchartapp.view.FlowItem
+                        android:id="@+id/fl_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        ryv:imagebackgroud="@mipmap/ic_launcher"
+                        ryv:text_location="Bottom"
+                        ryv:textcontent="流程三" />
+                </cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout>
+
+                <cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout
+                    android:id="@+id/fl_ippc_group"
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <cn.flow.ryvonne.flowchartapp.view.FlowItem
+                        android:id="@+id/fl_4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        ryv:imagebackgroud="@mipmap/ic_launcher"
+                        ryv:text_location="Top"
+                        ryv:textcontent="流程四" />
+                </cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout>
+
+            </cn.flow.ryvonne.flowchartapp.view.FlowGroupView>
+
+        </cn.flow.ryvonne.flowchartapp.view.FlowLinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
