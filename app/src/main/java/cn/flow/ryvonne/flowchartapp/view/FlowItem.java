@@ -1,4 +1,4 @@
-﻿package cn.flow.ryvonne.flowchartapp.view;
+package cn.flow.ryvonne.flowchartapp.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,6 @@ import android.widget.ImageView;
 
 import cn.flow.ryvonne.flowchartapp.R;
 import cn.flow.ryvonne.flowchartapp.TypedValueAssit;
-
 
 public class FlowItem extends ImageView {
     /**
@@ -214,4 +213,3 @@ public class FlowItem extends ImageView {
         return bitmap;
     }
 }
-
